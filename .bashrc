@@ -11,7 +11,7 @@ temp()
 
 ### arch
 alias yay='yay --sudoloop'
-alias upd='yay -Suy --noconfirm'
+alias upd='yay -Suy --noconfirm; pkgfile -u'
 alias inst='yay -Suy'
 ###
 
