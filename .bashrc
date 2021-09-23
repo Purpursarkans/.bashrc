@@ -13,6 +13,7 @@ temp()
 alias yay='yay --sudoloop'
 alias upd='sudo pkgfile -u; yay -Suy --noconfirm'
 alias inst='yay -Suy'
+source /usr/share/doc/pkgfile/command-not-found.bash
 ###
 
 ### ubuntu
