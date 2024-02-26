@@ -1,6 +1,9 @@
 ### Shell
 Nameps="tm"
+#green
 export PS1="\[\033[38;5;46m\]\u@\H \[$(tput sgr0)\]\[\033[38;5;51m\]\w\[$(tput sgr0)\]\[\033[38;5;46m\] ${Nameps}\n>>> \[$(tput sgr0)\]"
+#pink
+export PS1="\[\033[38;5;213m\]\u@\H \[$(tput sgr0)\]\[\033[38;5;51m\]\w\[$(tput sgr0)\]\[\033[38;5;213m\] ${Nameps}\n>>> \[$(tput sgr0)\]"
 ###
 
 ### raspberry pi 
