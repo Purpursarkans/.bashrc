@@ -14,12 +14,22 @@ temp()
 ###
 
 
-### arch
+### arch+arm
 alias yay='yay --sudoloop'
-alias upd='sudo pkgfile -u; yay -Suy --noconfirm'
-alias inst='yay -Suy'
+alias inst='yay -S'
 source /usr/share/doc/pkgfile/command-not-found.bash
+alias upd='sudo pkgfile -u; time sudo pacman -Suy --noconfirm'
+alias updaur='sudo pkgfile -u; yay -Suy --repo --noconfirm; time yay -Suy --noconfirm'
+alias checkaur="pacman -Qqm"
+alias reupdaur="yay -Suy --repo --noconfirm; yay -Sc --aur --noconfirm; time yay --noconfirm -Suy \$(pacman -Qqm)"
 ###
+### arch x86 only
+alias updmirror="time sudo reflector --sort rate --save /etc/pacman.d/mirrorlist"
+alias fullupd="updmirror; updaur"
+###
+
+
+
 
 ### ubuntu
 alias upd='sudo apt-get update && sudo apt-get upgrade'
