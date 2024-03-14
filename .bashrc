@@ -35,3 +35,6 @@ alias fullupd="updmirror; updaur"
 alias upd='sudo apt-get update && sudo apt-get upgrade'
 alias inst='sudo apt-get install'
 ###
+
+
+#test message 
